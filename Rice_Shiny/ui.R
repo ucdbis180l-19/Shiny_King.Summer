@@ -8,6 +8,9 @@
 #
 
 library(shiny)
+library(tidyverse)
+read_csv("/home/ubuntu/Downloads/RiceSNPData/snpInfo.csv")
+
 
 # Define UI for application that draws a histogram
 shinyUI(fluidPage(
