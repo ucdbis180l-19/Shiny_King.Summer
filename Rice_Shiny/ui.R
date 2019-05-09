@@ -21,22 +21,27 @@ shinyUI(fluidPage(
   sidebarLayout(
     sidebarPanel(
        radioButtons("trait",
-                    "Choose a trait to display:",
-                    c(
-                      "Protein.content",
+                    "Choose a trait to plot wtih Regions:",
+                    c("Protein.content",
                       "Seed.length",
                       "Seed.width",
                       "Amylose.content",
                       "Alu.Tol",
                       "Plant.height",
                       "Panicle.length",
-                      "Seed.volume"
-                      ))
+                      "Seed.volume")
+       ),
+                    
+                    radioButtons("Plots",
+                                 "Choose a plot:",
+                                 c("BoxPlot",
+                                   "Histogram")
+                                 )
     ),
-    
+  
     # Show a plot of the generated distribution
     mainPanel(
-       plotOutput("RicePlot")
+       plotOutput("Plot")
     )
   )
 ))
