@@ -23,9 +23,10 @@ shinyUI(fluidPage(
        radioButtons("trait",
                     "Choose a trait to display:",
                     c(
-                      "Protein content",
-                      "Seed length",
-                      "Seed width"
+                      "Protein.content",
+                      "Seed.length",
+                      "Seed.width",
+                      "Amylose.content"
                       ))
     ),
     
