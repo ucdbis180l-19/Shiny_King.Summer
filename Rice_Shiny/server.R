@@ -9,6 +9,8 @@
 
 library(shiny)
 library(ggplot2)
+rice_data <- read_csv("/home/ubuntu/Assignments/ShinyApp/Shiny_King.Summer/Rice_Shiny/RiceSNPData/RiceDiversity.44K.MSU6.Phenotypes.csv")
+
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
