@@ -26,7 +26,11 @@ shinyUI(fluidPage(
                       "Protein.content",
                       "Seed.length",
                       "Seed.width",
-                      "Amylose.content"
+                      "Amylose.content",
+                      "Alu.Tol",
+                      "Plant.height",
+                      "Panicle.length",
+                      "Seed.volume"
                       ))
     ),
     
