@@ -18,7 +18,7 @@ shinyServer(function(input, output) {
    
   output$RicePlot <- renderPlot({
         
-    pl <- ggplot(data = rice_data, aes(x = Region, y = input$trait))
+    pl <- ggplot(data = rice_data, aes_string(x = "Region", y = input$trait))
     pl <- pl + geom_boxplot()
     pl
     
