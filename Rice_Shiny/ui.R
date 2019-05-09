@@ -9,7 +9,7 @@
 
 library(shiny)
 library(tidyverse)
-read_csv("/home/ubuntu/Downloads/RiceSNPData/RiceDiversity.44K.MSU6.Phenotypes.csv")
+rice_data <- read_csv("/home/ubuntu/Downloads/RiceSNPData/RiceDiversity.44K.MSU6.Phenotypes.csv")
 
 
 # Define UI for application that draws a histogram
@@ -32,7 +32,7 @@ shinyUI(fluidPage(
     
     # Show a plot of the generated distribution
     mainPanel(
-       plotOutput("distPlot")
+       plotOutput("RicePlot")
     )
   )
 ))
