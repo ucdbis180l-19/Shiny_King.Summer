@@ -10,6 +10,7 @@
 library(shiny)
 library(tidyverse)
 
+
 # Define UI for application that draws a histogram
 shinyUI(fluidPage(
   
@@ -21,10 +22,11 @@ shinyUI(fluidPage(
     sidebarPanel(
        radioButtons("trait",
                     "Choose a trait to display:",
-                    c("Region",
-                      "Protein Content",
-                      "Seed Length",
-                      "Seed Width"
+                    c(
+                      "Protein.content",
+                      "Seed.length",
+                      "Seed.width",
+                      "Amylose.content"
                       ))
     ),
     
