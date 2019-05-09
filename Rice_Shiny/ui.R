@@ -23,7 +23,11 @@ shinyUI(fluidPage(
     sidebarPanel(
        radioButtons("trait",
                     "Choose a trait to display:",
-                    c(''))
+                    c("Region",
+                      "Protein Content",
+                      "Seed Length",
+                      "Seed Width"
+                      ))
     ),
     
     # Show a plot of the generated distribution
