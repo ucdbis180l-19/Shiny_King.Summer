@@ -9,7 +9,7 @@
 
 library(shiny)
 library(ggplot2)
-rice_data <- read_csv("/home/ubuntu/Shiny_King.Summer/Rice_Shiny/Ricepop.csv")
+rice_data <- read_csv("Ricepop.csv")
 
 
 
