@@ -16,8 +16,9 @@ shinyUI(fluidPage(
   
   # Application title
   titlePanel("Rice SNP Data"),
-  
-  helpText("This website has everything you need to now about rice!")
+  #An introduction of the webapp
+  helpText("This website has everything you need to now about rice!", 
+           "Choose traits of your intersts and happy plotting!!:)"),
   
   # Sidebar with a slider input for number of bins 
   sidebarLayout(
