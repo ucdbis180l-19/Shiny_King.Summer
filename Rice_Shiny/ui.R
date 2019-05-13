@@ -40,7 +40,6 @@ shinyUI(fluidPage(
                       "Histogram",
                       "Violin",
                       "ScatterPlot")),
-       
        selectInput("xtrait",
                     "Choose a trait (x-axis) for Scatterplot:",
                     c("Protein.content",
